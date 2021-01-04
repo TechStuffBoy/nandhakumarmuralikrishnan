@@ -16,6 +16,34 @@
     <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
+
+    <style>
+        .tooltip {
+          position: relative;
+          display: inline-block;
+          border-bottom: 1px dotted black;
+        }
+        
+        .tooltip .tooltiptext {
+          visibility: hidden;
+          width: 120px;
+          background-color: black;
+          color: #fff;
+          text-align: center;
+          border-radius: 6px;
+          padding: 5px 0;
+        
+          /* Position the tooltip */
+          position: absolute;
+          z-index: 1;
+        }
+        
+        .tooltip:hover .tooltiptext {
+          visibility: visible;
+        }
+    </style>
+
+
 </head>
 
 <body id="page-top">
@@ -59,7 +87,7 @@
                     Development, Firmware Development. I
                     have made a lot of contributions to the Internet of Things. I am always passionate about the
                     technology
-                    and the way it helps pepople solve their problems.</p>
+                    and the way it helps people solve their problems.</p>
                 <div class="social-icons">
                     <a class="social-icon" href="https://www.linkedin.com/in/nandhakumar03/"><i
                             class="fab fa-linkedin-in"></i></a>
@@ -127,82 +155,97 @@
         <section class="resume-section" id="skills">
             <div class="resume-section-content">
                 <h2 class="mb-3">Skills</h2>
-                <div class="subheading mb-2">Languages & Frameworks</div>
+                <div class="subheading mb-2">Languages</div>
                 <ul class="list-inline dev-icons">
                     <li class="list-inline-item"><img src="./assets/img/icons/python.png" width="80px" height="70px"
-                            alt="Python" />
+                            alt="Python" title="Python" />
                     </li>
-                    <li class="list-inline-item"><img src="./assets/img/icons/flask.png" width="70px" height="70px"
-                            alt="Flask" />
-                    </li>
-                    <li class="list-inline-item"><img src="./assets/img/icons/java.svg" width="70px" height="80px"
-                            alt="Java" />
+                    <li class="list-inline-item"><img src="./assets/img/icons/javascript.png" width="80px" height="70px"
+                        alt="javascript" title="Javascript" />
                     </li>
                     <li class="list-inline-item"><img src="./assets/img/icons/C.png" width="70px" height="70px"
-                            alt="C" />
+                        alt="C" title="C"/>
                     </li>
+                    <li class="list-inline-item"><img src="./assets/img/icons/java.svg" width="70px" height="80px"
+                            alt="Java" title="Java" />
+                    </li>
+                </ul>
+                <div class="subheading mb-2">Frameworks</div>
+                <ul class="list-inline dev-icons"> 
+                    <li class="list-inline-item"><img src="./assets/img/icons/django.png" width="80px" height="70px"
+                        alt="Django" title="Django" />
+                    </li>
+                    <li class="list-inline-item"><img src="./assets/img/icons/flask.png" width="70px" height="70px"
+                            alt="Flask" title="Flask"/>
+                    </li>
+                    <li class="list-inline-item"><img src="./assets/img/icons/reactjs.png" width="70px" height="70px"
+                            alt="React JS" title="React JS"/>
+                    </li>
+                </ul>
+                <div class="subheading mb-2">Web Technologies</div>
+                <ul class="list-inline dev-icons"> 
                     <li class="list-inline-item"><img src="./assets/img/icons/html5.png" width="70px" height="70px"
-                            alt="HTML5" />
+                        alt="HTML5" title="HTML5" />
                     </li>
                     <li class="list-inline-item"><img src="./assets/img/icons/css3.png" width="70px" height="70px"
-                            alt="CSS3" />
+                            alt="CSS3" title="CSS3"/>
                     </li>
                     <li class="list-inline-item"><img src="./assets/img/icons/bootstrap-4.svg" width="60px"
-                            height="60px" alt="Bootstrap" />
-                    </li>
+                            height="60px" alt="Bootstrap" title="Bootstrap"/>
+                </li>
                 </ul>
                 <div class="subheading mb-2">Version Control</div>
                 <ul class="list-inline dev-icons">
                     <li class="list-inline-item"><img src="./assets/img/icons/git.svg" width="55px" height="55px"
-                            alt="GIT" />
+                            alt="GIT" title="GIT"/>
                     </li>
                 </ul>
                 <div class="subheading mb-2">Database & ORMs</div>
                 <ul class="list-inline dev-icons">
                     <li class="list-inline-item"><img src="./assets/img/icons/mysql.png" width="70px" height="80px"
-                            alt="MySQL" />
+                            alt="MySQL"  title="MYSQL"/>
                     </li>
                     <li class="list-inline-item"><img src="./assets/img/icons/postgres.png" width="70px" height="80px"
-                            alt="Postgres" />
+                            alt="Postgres" title="Postgres"/>
                     </li>
                     <li class="list-inline-item"><img src="./assets/img/icons/SQLite.png" width="85px" height="80px"
-                            alt="SQLite" />
+                            alt="SQLite" title="SQLite"/>
                     </li>
                     <li class="list-inline-item"><img src="./assets/img/icons/sqlalchemy.png" width="85px" height="80px"
-                            alt="SQLAlchemy" />
+                            alt="SQLAlchemy" title="SQLAlchemy" />
                     </li>
                 </ul>
                 <div class="subheading mb-2">Cloud Technologies</div>
                 <ul class="list-inline dev-icons">
                     <li class="list-inline-item"><img src="./assets/img/icons/aws.svg" width="80px" height="80px"
-                            alt="AWS" />
+                            alt="AWS" title="AWS"/>
                     </li>
                     <li class="list-inline-item"><img src="./assets/img/icons/heroku.png" width="80px" height="80px"
-                            alt="Heroku" />
+                            alt="Heroku" title="Heroku"/>
                     </li>
                     <li class="list-inline-item"><img src="./assets/img/icons/linode.png" width="80px" height="100px"
-                            alt="Linode" />
+                            alt="Linode" title="Linode"/>
                     </li>
                 </ul>
-                <div class="subheading mb-2">Hardwares</div>
+                <div class="subheading mb-2">Hardware</div>
                 <ul class="list-inline dev-icons">
                     <li class="list-inline-item"><img src="./assets/img/icons/raspberrypi.png" width="100px"
-                            height="80px" alt="Raspberry Pi" />
+                            height="80px" alt="Raspberry Pi" title="Raspberry Pi"/>
                     </li>
                     <li class="list-inline-item"><img src="./assets/img/icons/arduino.png" width="70px" height="70px"
-                            alt="Arduino" />
+                            alt="Arduino" title="Arduino"/>
                     </li>
                 </ul>
                 <div class="subheading mb-2">Operating System</div>
                 <ul class="list-inline dev-icons">
                     <li class="list-inline-item"><img src="./assets/img/icons/macos.png" width="100px" height="80px"
-                            alt="Mac OS" />
+                            alt="Mac OS" title="Mac OS"/>
                     </li>
                     <li class="list-inline-item"><img src="./assets/img/icons/ubuntu.png" width="100px" height="80px"
-                            alt="Ubuntu" />
+                            alt="Ubuntu" title="Ubuntu"/>
                     </li>
                     <li class="list-inline-item"><img src="./assets/img/icons/windows10.png" width="100px" height="80px"
-                            alt="Windows 10" />
+                            alt="Windows 10" title="Windows 10" />
                     </li>
                 </ul>
 
